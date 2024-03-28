@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau Truc Dieu Kien</title>
+</head>
+<body>
+    <script>
+        //Bai tap 1
+        function kiemTraSoChan(number) {
+            if (number % 2 === 0) {
+                console.log("Số chẵn");
+            } else {
+                console.log("Số lẻ");
+            }
+        }
+        kiemTraSoChan(10);
+        kiemTraSoChan(7);
+        //Bai tap 2
+        function kiemTraSoNguyenDuong(number) {
+            if (number > 0 && Number.isInteger(number)) {
+                console.log("Số nguyên dương");
+            } else {
+                console.log("Không phải số nguyên dương");
+            }
+        }
+        kiemTraSoNguyenDuong(5);   
+        kiemTraSoNguyenDuong(-3)
+        //Bai tap 3
+        function kiemTraNamNhuan(year) {
+            if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+                console.log("Năm nhuận");
+            } else {
+                console.log("Không phải năm nhuận");
+            }
+        }
+        
+        kiemTraNamNhuan(2020);  
+        kiemTraNamNhuan(2021); 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau Truc Lap</title>
+</head>
+<body>
+    <script>
+        //Bai 1
+        let n1 = parseInt(prompt("Nhập số nguyên dương n:"));
+            let sum = 0;
+
+            for (let i = 1; i <= n; i++) {
+                sum += i;
+            }
+
+            console.log("Tổng các số từ 1 đến " + n + " là: " + sum);
+
+        //Bai 2
+        let n2 = parseInt(prompt("Nhập số nguyên dương n:"));
+            let factorial = 1;
+            let i = 1;
+
+            while (i <= n) {
+                factorial *= i;
+                i++;
+            }
+
+            console.log("Giai thừa của " + n + " là: " + factorial);
+        //Bai 3
+        for (let i = 2; i <= 9; i++) {
+            console.log("Bảng cửu chương " + i + ":");
+            for (let j = 1; j <= 10; j++) {
+                console.log(i + " x " + j + " = " + (i * j));
+            }
+            console.log("\n");
+        }
+    </script>
+</body>
+</html>
